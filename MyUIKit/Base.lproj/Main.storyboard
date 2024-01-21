@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,33 +13,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq3-Lf-SYR">
-                                <rect key="frame" x="159" y="438" width="76" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq3-Lf-SYR">
+                                <rect key="frame" x="6.5568369028007965" y="437.99999999994645" width="361" height="34.999999999997044"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Touch!"/>
                                 <connections>
                                     <action selector="didMyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSX-Ch-l0U"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-1K-UDd">
-                                <rect key="frame" x="14" y="292" width="365" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-1K-UDd">
+                                <rect key="frame" x="18" y="399" width="339" height="31"/>
                             </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5o-mp-Qrl">
-                                <rect key="frame" x="173" y="548" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5o-mp-Qrl">
+                                <rect key="frame" x="163" y="548" width="51" height="31"/>
                             </switch>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CjJ-LM-aOV">
-                                <rect key="frame" x="150" y="633" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CjJ-LM-aOV">
+                                <rect key="frame" x="140.66666666666666" y="633" width="93.666666666666657" height="32"/>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Dyani" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvW-05-G6N">
-                                <rect key="frame" x="144" y="188" width="104" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Dyani" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvW-05-G6N">
+                                <rect key="frame" x="134.66666666666666" y="223" width="105.66666666666666" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +43,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="DvW-05-G6N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134.55683690280694" id="3sW-hV-M9Z"/>
+                            <constraint firstItem="CjJ-LM-aOV" firstAttribute="top" secondItem="k5o-mp-Qrl" secondAttribute="bottom" constant="53.999999999989654" id="5R2-c0-W35"/>
+                            <constraint firstItem="Nq3-Lf-SYR" firstAttribute="top" secondItem="wwl-1K-UDd" secondAttribute="bottom" constant="8.9999999999464535" id="ASz-92-amN"/>
+                            <constraint firstItem="wwl-1K-UDd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B08-A0-97v"/>
+                            <constraint firstItem="wwl-1K-UDd" firstAttribute="top" secondItem="DvW-05-G6N" secondAttribute="bottom" constant="150" id="BSa-w4-RLZ"/>
+                            <constraint firstItem="DvW-05-G6N" firstAttribute="centerX" secondItem="Nq3-Lf-SYR" secondAttribute="centerX" id="OOu-yl-TJS"/>
+                            <constraint firstItem="DvW-05-G6N" firstAttribute="centerX" secondItem="wwl-1K-UDd" secondAttribute="centerX" id="Paa-aF-Mnv"/>
+                            <constraint firstItem="DvW-05-G6N" firstAttribute="centerX" secondItem="CjJ-LM-aOV" secondAttribute="centerX" id="ZVK-Za-zHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CjJ-LM-aOV" secondAttribute="bottom" constant="113.00000000007719" id="emB-Sd-vnj"/>
+                            <constraint firstItem="wwl-1K-UDd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hzo-4g-9U5"/>
+                            <constraint firstItem="CjJ-LM-aOV" firstAttribute="centerX" secondItem="k5o-mp-Qrl" secondAttribute="centerX" id="iRr-im-NbP"/>
+                            <constraint firstItem="CjJ-LM-aOV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140.55683690280739" id="rC0-Cx-xTv"/>
+                            <constraint firstAttribute="trailing" secondItem="wwl-1K-UDd" secondAttribute="trailing" constant="20" id="uca-oa-NL0"/>
+                            <constraint firstItem="Nq3-Lf-SYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6.5568369028007965" id="yz5-vp-nBE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="Nq3-Lf-SYR" id="K5o-F8-QxO"/>
@@ -60,7 +72,10 @@
     </scenes>
     <resources>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
