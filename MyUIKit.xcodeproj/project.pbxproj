@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06267E192B5D697A005F8E30 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267E182B5D697A005F8E30 /* MyViewController.swift */; };
+		06267E1B2B5EAE62005F8E30 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */; };
 		06454B862B5AC511008BEAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B852B5AC511008BEAAE /* AppDelegate.swift */; };
 		06454B882B5AC511008BEAAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B872B5AC511008BEAAE /* SceneDelegate.swift */; };
 		06454B8A2B5AC511008BEAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B892B5AC511008BEAAE /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		06267E182B5D697A005F8E30 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		06454B822B5AC511008BEAAE /* MyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06454B852B5AC511008BEAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06454B872B5AC511008BEAAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				06454B8E2B5AC516008BEAAE /* Assets.xcassets */,
 				06454B902B5AC516008BEAAE /* LaunchScreen.storyboard */,
 				06454B932B5AC516008BEAAE /* Info.plist */,
+				06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */,
 			);
 			path = MyUIKit;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				06454B8A2B5AC511008BEAAE /* ViewController.swift in Sources */,
 				06454B862B5AC511008BEAAE /* AppDelegate.swift in Sources */,
 				06267E192B5D697A005F8E30 /* MyViewController.swift in Sources */,
+				06267E1B2B5EAE62005F8E30 /* MyTableViewController.swift in Sources */,
 				06454B882B5AC511008BEAAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
