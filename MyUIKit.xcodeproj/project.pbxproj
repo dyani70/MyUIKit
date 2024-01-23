@@ -64,11 +64,11 @@
 				06454B872B5AC511008BEAAE /* SceneDelegate.swift */,
 				06454B892B5AC511008BEAAE /* ViewController.swift */,
 				06267E182B5D697A005F8E30 /* MyViewController.swift */,
+				06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */,
 				06454B8B2B5AC511008BEAAE /* Main.storyboard */,
 				06454B8E2B5AC516008BEAAE /* Assets.xcassets */,
 				06454B902B5AC516008BEAAE /* LaunchScreen.storyboard */,
 				06454B932B5AC516008BEAAE /* Info.plist */,
-				06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */,
 			);
 			path = MyUIKit;
 			sourceTree = "<group>";
