@@ -16,17 +16,25 @@ class MyTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .brown
-        myTableView.backgroundColor = .green
-        myTableView.delegate = self
-        myTableView.dataSource = self
+        configureTableView()
         
         
     }
     
+    func configureTableView() {
+        myTableView.backgroundColor = .green
+        myTableView.delegate = self
+        myTableView.dataSource = self
+    }
+    
 }
 
-extension MyTableViewController:
-    UITableViewDelegate, UITableViewDataSource {
+extension MyTableViewController: UITableViewDelegate {
+    
+    
+}
+
+extension MyTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellData.count
     }
@@ -37,6 +45,16 @@ extension MyTableViewController:
         cell.textLabel?.text = cellData[indexPath.row]
         return UITableViewCell()
     }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     
     
 }
