@@ -16,6 +16,8 @@
 		06454B8D2B5AC511008BEAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06454B8B2B5AC511008BEAAE /* Main.storyboard */; };
 		06454B8F2B5AC516008BEAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06454B8E2B5AC516008BEAAE /* Assets.xcassets */; };
 		06454B922B5AC516008BEAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06454B902B5AC516008BEAAE /* LaunchScreen.storyboard */; };
+		068400932B6D2121006E1638 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068400922B6D2121006E1638 /* GreenViewController.swift */; };
+		068400952B6D2163006E1638 /* IndigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068400942B6D2163006E1638 /* IndigoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		06454B8E2B5AC516008BEAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06454B912B5AC516008BEAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06454B932B5AC516008BEAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068400922B6D2121006E1638 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		068400942B6D2163006E1638 /* IndigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				06454B902B5AC516008BEAAE /* LaunchScreen.storyboard */,
 				06454B932B5AC516008BEAAE /* Info.plist */,
 				061B3FC12B62A49F0019F72B /* TodoViewController.swift */,
+				068400922B6D2121006E1638 /* GreenViewController.swift */,
+				068400942B6D2163006E1638 /* IndigoViewController.swift */,
 			);
 			path = MyUIKit;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 				06267E1B2B5EAE62005F8E30 /* MyTableViewController.swift in Sources */,
 				061B3FC22B62A49F0019F72B /* TodoViewController.swift in Sources */,
 				06454B882B5AC511008BEAAE /* SceneDelegate.swift in Sources */,
+				068400952B6D2163006E1638 /* IndigoViewController.swift in Sources */,
+				068400932B6D2121006E1638 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
