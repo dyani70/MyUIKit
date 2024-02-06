@@ -10,6 +10,8 @@
 		061B3FC22B62A49F0019F72B /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B3FC12B62A49F0019F72B /* TodoViewController.swift */; };
 		06267E192B5D697A005F8E30 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267E182B5D697A005F8E30 /* MyViewController.swift */; };
 		06267E1B2B5EAE62005F8E30 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */; };
+		062C552A2B727B150062AD33 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C55292B727B150062AD33 /* ProfileViewController.swift */; };
+		062C552C2B727DF40062AD33 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C552B2B727DF40062AD33 /* ProfileDetailViewController.swift */; };
 		06454B862B5AC511008BEAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B852B5AC511008BEAAE /* AppDelegate.swift */; };
 		06454B882B5AC511008BEAAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B872B5AC511008BEAAE /* SceneDelegate.swift */; };
 		06454B8A2B5AC511008BEAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454B892B5AC511008BEAAE /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		061B3FC12B62A49F0019F72B /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		06267E182B5D697A005F8E30 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		06267E1A2B5EAE62005F8E30 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		062C55292B727B150062AD33 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		062C552B2B727DF40062AD33 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		06454B822B5AC511008BEAAE /* MyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06454B852B5AC511008BEAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06454B872B5AC511008BEAAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				061B3FC12B62A49F0019F72B /* TodoViewController.swift */,
 				068400922B6D2121006E1638 /* GreenViewController.swift */,
 				068400942B6D2163006E1638 /* IndigoViewController.swift */,
+				062C55292B727B150062AD33 /* ProfileViewController.swift */,
+				062C552B2B727DF40062AD33 /* ProfileDetailViewController.swift */,
 			);
 			path = MyUIKit;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 				06267E192B5D697A005F8E30 /* MyViewController.swift in Sources */,
 				06267E1B2B5EAE62005F8E30 /* MyTableViewController.swift in Sources */,
 				061B3FC22B62A49F0019F72B /* TodoViewController.swift in Sources */,
+				062C552C2B727DF40062AD33 /* ProfileDetailViewController.swift in Sources */,
 				06454B882B5AC511008BEAAE /* SceneDelegate.swift in Sources */,
+				062C552A2B727B150062AD33 /* ProfileViewController.swift in Sources */,
 				068400952B6D2163006E1638 /* IndigoViewController.swift in Sources */,
 				068400932B6D2121006E1638 /* GreenViewController.swift in Sources */,
 			);

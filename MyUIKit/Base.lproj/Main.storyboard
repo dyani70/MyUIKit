@@ -585,7 +585,7 @@
                     <connections>
                         <segue destination="0to-Tb-Ldb" kind="relationship" relationship="viewControllers" id="x4Q-dK-OFF"/>
                         <segue destination="vWC-5V-Ynv" kind="relationship" relationship="viewControllers" id="PaT-VM-RKb"/>
-                        <segue destination="fsP-Tg-i9P" kind="relationship" relationship="viewControllers" id="HFf-R2-1jh"/>
+                        <segue destination="oki-IC-Mfo" kind="relationship" relationship="viewControllers" id="HFf-R2-1jh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVM-Wr-Mhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -603,6 +603,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gGB-KT-C6J">
                                 <rect key="frame" x="0.0" y="50" width="375" height="679"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todoCell" id="1SN-ya-4UC">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1SN-ya-4UC" id="aLu-Pd-baF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DGH-8Y-mQG"/>
@@ -620,21 +630,96 @@
             </objects>
             <point key="canvasLocation" x="5977" y="2168"/>
         </scene>
-        <!--profile-->
+        <!--Profile View Controller-->
         <scene sceneID="wM9-Jz-9rq">
             <objects>
-                <viewController id="fsP-Tg-i9P" sceneMemberID="viewController">
+                <viewController id="fsP-Tg-i9P" customClass="ProfileViewController" customModule="MyUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FM1-Vu-vNq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-LH-iEM">
+                                <rect key="frame" x="0.0" y="94" width="375" height="635"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profileCell" id="Yzu-Dd-M2V">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yzu-Dd-M2V" id="kfT-Qj-o7s">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CSu-zD-hkr" kind="show" identifier="profileSegue" id="p7G-WM-1h5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="46z-Qw-eXd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EuR-LH-iEM" firstAttribute="top" secondItem="46z-Qw-eXd" secondAttribute="top" id="2Lh-eI-Eb3"/>
+                            <constraint firstItem="46z-Qw-eXd" firstAttribute="trailing" secondItem="EuR-LH-iEM" secondAttribute="trailing" id="5Rm-bo-pqy"/>
+                            <constraint firstItem="46z-Qw-eXd" firstAttribute="bottom" secondItem="EuR-LH-iEM" secondAttribute="bottom" id="CjG-6p-m91"/>
+                            <constraint firstItem="EuR-LH-iEM" firstAttribute="leading" secondItem="46z-Qw-eXd" secondAttribute="leading" id="rVN-Jw-CXc"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="profile" image="person" catalog="system" id="XGA-Vm-7Oi"/>
+                    <navigationItem key="navigationItem" id="uuX-L5-Je8"/>
+                    <connections>
+                        <outlet property="profileTableView" destination="EuR-LH-iEM" id="90G-jj-AZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQn-Ev-P1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5977" y="2891"/>
+            <point key="canvasLocation" x="6919.1999999999998" y="2890.6403940886703"/>
+        </scene>
+        <!--Profile Detail View Controller-->
+        <scene sceneID="1l2-oI-Y4M">
+            <objects>
+                <viewController id="CSu-zD-hkr" customClass="ProfileDetailViewController" customModule="MyUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8mc-OS-RZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLc-Yu-Pga">
+                                <rect key="frame" x="48" y="376" width="278" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LZ7-ex-lur"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AOu-tc-xCI"/>
+                    <connections>
+                        <outlet property="textLabel" destination="TLc-Yu-Pga" id="SbI-v9-M5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0As-r0-OOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7672.8000000000002" y="2885.4679802955666"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="dIJ-dC-1In">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oki-IC-Mfo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="profile" image="person" catalog="system" id="XGA-Vm-7Oi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0RY-Sg-rUs">
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fsP-Tg-i9P" kind="relationship" relationship="rootViewController" id="56v-1f-pe8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPN-Wx-Fg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5976.8000000000002" y="2890.6403940886703"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
